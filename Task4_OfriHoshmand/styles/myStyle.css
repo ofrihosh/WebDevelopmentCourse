@@ -1,0 +1,120 @@
+body {
+    direction: rtl;
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#container {
+    width: 960px;
+    border: dashed 5px purple;
+    padding: 30px;
+    margin:0 auto;
+}
+h1{
+    color:darkblue;
+    font-size:50px;
+    text-align: center;
+}
+ul {
+    color: cornflowerblue;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+    #ditails > ul > li {
+        margin-bottom: 8px;
+    }
+
+h2 {
+    margin-top: 20px;
+    font-size: xx-large;
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px #3DB1FF;
+}
+#mylinks {
+    margin-bottom: 100px;
+}
+#mylinks > a
+{
+    text-decoration:none;
+}
+#g {
+    background-image: url(../images/gmail.ico);
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    margin-right: 520px;
+}
+
+#f {
+    background-image: url(../images/facebook.png);
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    margin-right: 405px;
+}
+
+#picOfri {
+    background-image: url(../images/ofri.jpeg);
+    background-size:120%;
+    width:300px;
+    height:200px;
+    position: absolute;
+    display:inline-block;
+    margin-right:20px;
+}
+
+p {
+    width:500px;
+    height: 10px;
+}
+
+#mylinks > a > span:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/*    task2         */
+nav{
+    margin-bottom:40px;
+}
+nav > ul {
+    list-style: none;
+    font-size:20px;
+}
+
+nav ul li {
+    display: inline-block;
+    float: right;
+}
+
+    nav ul li a {
+        display: block;
+        background-color: #2f2f33;
+        color: white;
+        width: 120px;
+        height: 30px;
+        padding-top: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        nav ul li a:hover {
+            background-color:purple;
+            font-weight:bold;
+        }
+
+        nav ul li a:active {
+            background-color: cornflowerblue;
+        }    .onThisPage > a {
+        background-color:rebeccapurple;
+    }
