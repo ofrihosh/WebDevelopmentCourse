@@ -1,125 +1,89 @@
 ﻿<!doctype html>
-<html lang="" class="animated slideInLeft">
-<head>
+<html lang="">
+<head class"header>
     <meta charset="utf-8" />
-    <title>מרתוניסט - מפת אתר</title>
-    <meta name="description" content="עמוד מפת אתר של אתר מרתוניסט - המדריך לריצת המרתון הראשונה שלך" />
-    <meta name="keywords" content="מרתון ראשון, ריצה, תחרות, מרתון, מפת אתר" />
-    <meta name="author" content="naor daniel, ofri hoshmand and daniele harary" />
+    <title>מרתוניסט - עמוד הבית</title>
+    <meta name="description" content="עמוד הבית של אתר מרתוניסט - המדריך לריצת המרתון הראשונה שלך" />
+    <meta name="keywords" content=" מרתון ראשון, ריצה, תחרות,מרתון" />
+    <meta name="author" content="naor daniel, ofri hoshmand and daniele harrary" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="icon" href="images/siteIcon.png">
     <!-- CSS -->
-    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/reset.css" rel="stylesheet" />
     <link href="styles/myStyle.css" rel="stylesheet" />
-    <link href="styles/animate.css" rel="stylesheet" />
 
-
+    <link href="animate.css-master/animate.css-master/animate.css" rel="stylesheet" />
     <!-- Scripts -->
     <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <script src="jScripts/JavaScript.js"></script>
 
 </head>
-
-<body>
-    
-        <nav id="mainNav">
-            <ul>
-                <!--הלוגו יעוצב ב סיאסס כדי שיהיה נגיש -->
-                <li id="logo"><h1><b> <a href="homepage.html">הדרך למרתון</a> </b>  </h1></li>
-                <li><a href="#">הכנות ראשונות</a></li>
-                <li><a href="#">הכנה מנטלית</a></li>
-                <li><a href="#">אימונים</a></li>
-                <li><a href="#">בריאות ותזונה</a></li>
-                <li><a href="#">לוח אירועים</a></li>
-            </ul>
-        </nav>
-
-   
+<body onload="tab_nav()">
 
     <div id="container">
-        <section id="siteMap">
-            <h1>מפת אתר </h1>
-            <nav>
-                <ul>
-                    <div>
-                        <li> <B> <a href="#">אימונים</a>  </B> </li>
-                        <li><a href="#">סוגי אימונים</a></li>
-                        <li><a class="notActive" href="#">מסלולים מומלצים</a></li>
-                        <li><a href="#"> הכנה מנטלית</a></li>
-                        <li><a href="#"> תכניות אימונים</a></li>
-                    </div>
 
-                    <div>
-                        <li> <B> <a href="#">בריאות ותזונה</a>  </B> </li>
-                        <li><a class="notActive" href="#">תפריטים והמלצות</a></li>
-                        <li><a class="notActive" href="#">מחשבוני תזונה</a></li>
-                        <li><a class="notActive" href="#"> פציעות נפוצות – שאלות תשובות</a></li>
-                    </div>
-                    <div>
-                        <li> <B> <a href="#">ביגוד ואביזרים</a>  </B> </li>
-                        <li><a class="notActive" href="#">גברים</a></li>
-                        <li><a class="notActive" href="#"> נשים</a></li>
-                        <li><a class="notActive" href="#">אביזרים וגאדג'טים</a></li>
-                    </div>
+        <ul id="skip">
+            <li><a href="#content-anchor">קפוץ לתוכן</a></li>
+        </ul>
 
-                    <div>
-                        <li> <B> <a href="#">לוח אירועים</a>  </B> </li>
-                    </div>
-
-                </ul>
-            </nav>
-        </section>
-
-    </div>
-    <!--<script>
-        // Select all links with hashes
-        $('a[href*="#"]')
-            // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function (event) {
-                // On-page links
-                if (
-                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                    &&
-                    location.hostname == this.hostname
-                ) {
-                    // Figure out element to scroll to
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    // Does a scroll target exist?
-                    if (target.length) {
-                        // Only prevent default if animation is actually gonna happen
-                        event.preventDefault();
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000, function () {
-                            // Callback after animation
-                            // Must change focus!
-                            var $target = $(target);
-                            $target.focus();
-                            if ($target.is(":focus")) { // Checking if the target was focused
-                                return false;
-                            } else {
-                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                $target.focus(); // Set focus again
-                            };
-                        });
-                    }
-                }
-            });
-    </script>-->
-    <footer>
-        <nav id="footerNav">
+        <nav id="mainNav">
             <ul>
-                <li><a href="about .html">אודות</a></li>
-                <li><a href="contactus.html">צור קשר</a></li>
-                <li><a href="sitemap .html">מפת אתר</a></li>
+                <li id="logo"><h1><b> <a href="homepage.html">מרתוניסט</a> </b> <span id="subtitle"> <a href="homepage.html">איתך בדרך למרתון הראשון </a></span> </h1></li>
+                <li><a href="getready.html">הכנות ראשונות</a></li>
+                <li><a href="mental.html">הכנה מנטלית</a></li>
+                <li><a href="trainig.html">אימונים</a></li>
+                <li><a href="health.html">בריאות ותזונה</a></li>
+                <li><a href="calender.html">לוח אירועים</a></li>
             </ul>
+
         </nav>
 
-    </footer>
+        <article>
+            <section id="siteMap">
+                <h2>מפת אתר </h2>
+                <nav>
+                    <ul>
+                        <li> <b class="sitemapBold"> <a href="homepage.html">עמוד הבית</a>  </b> </li>
+                        <li> <b class="sitemapBold"> <a href="getready.html">הכנות ראשונות</a>  </b> </li>
+                        <li><a href="getready.html#firstsec">צ'ק ליסט</a></li>
+                        <li><a href="getready.html#secondsec">ביגוד ואביזרים</a></li>
+                        <li> <b class="sitemapBold"> <a href="mental.html">הכנה מנטלית</a>  </b> </li>
+                        <li> <b class="sitemapBold"> <a href="trainig.html">אימונים</a>  </b> </li>
+                        <li><a href="trainig.html#training-sec1">תכניות אימונים</a></li>
+                        <li><a href="trainig.html#training-sec2">סוגי אימונים</a></li>
+                        <li><a href="trainig.html#training-sec3">מסלולים מומלצים</a></li>
+                        <li> <b class="sitemapBold"> <a href="health.html">בריאות ותזונה</a>  </b> </li>
+                        <li><a href="health.html#health-sec1">תפריטים מומלצים</a></li>
+                        <li><a href="health.html#health-sec2">שאלות נפוצות ודרכי מניעה</a></li>
+                        <li><a href="health.html#health-sec3">מחשבוני בריאות</a></li>
+                        <li> <b class="sitemapBold"> <a href="calender.html">לוח אירועים</a>  </b> </li>
+                        <li><a href="calender.html#calender-sec1">מרתונים מומלצים </a></li>
+                        <li><a href="calender.html#calender-sec2">תחרויות ריצה </a></li>
+                        <li> <b class="sitemapBold"> <a href="about .html">אודות</a>  </b> </li>
+                        <li> <b class="sitemapBold"> <a href="contactus.html">צור קשר</a>  </b> </li>
+       
+                    </ul>
+                </nav>
+
+            </section>
+        </article>
+        
+                    <footer >
+                        <nav id="sitemap-footer" class="footnavdesign">
+                            <ul>
+                                <li><a href="about .html">אודות</a></li>
+                                <li><a href="contactus.html">צור קשר</a></li>
+                                <li><a href="sitemap .html">מפת אתר</a></li>
+                            </ul>
+                        </nav>
+
+                    </footer>
+
+    </div>
 
 </body>
 
 
 </html>
+
