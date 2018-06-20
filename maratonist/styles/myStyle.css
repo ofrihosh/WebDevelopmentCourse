@@ -26,6 +26,11 @@ body {
         border-bottom: 3px solid;
         border-color: black;
     }
+
+.notActive {
+    cursor: not-allowed;
+}
+
 /*acssability */
 .accessibility {
     position: absolute;
@@ -301,11 +306,11 @@ a.button {
 /*HOME PAGE DESIGN*/
 #runner-home {
     content: url('../images/runner/runner-home.png');
-    height:600px;
-    margin:0 auto;
-    position:relative;
-    top:-840px;
-    right:250px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: -840px;
+    right: 250px;
 }
 
 
@@ -339,6 +344,11 @@ a.button {
     font-size: 25px;
     color: black;
     text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
     #startbtn:hover {
@@ -360,8 +370,7 @@ footer {
     position: relative;
     top: -140px;
     right: 290px;
-    font-size:17px;
-
+    font-size: 17px;
 }
 
 .footnavdesign ul li {
@@ -395,12 +404,12 @@ footer {
 
 #runner-getready {
     content: url('../images/runner/runner-get-ready.png');
-    height:580px;
-    margin:0 auto;
-    position:relative;
-    top:-3885px;
-    right:280px;
-    z-index:+5;
+    height: 580px;
+    margin: 0 auto;
+    position: relative;
+    top: -3885px;
+    right: 280px;
+    z-index: +5;
 }
 
 #getready-page {
@@ -544,12 +553,12 @@ footer {
 
 #runner-mental {
     content: url('../images/runner/mental-runner.png');
-        height:530px;
-    margin:0 auto;
-    position:relative;
-    top:-2050px;
-    right:280px;
-    z-index:+5;
+    height: 530px;
+    margin: 0 auto;
+    position: relative;
+    top: -2050px;
+    right: 280px;
+    z-index: +5;
 }
 
 #mental-title {
@@ -664,13 +673,14 @@ footer {
 
 #training-runner {
     content: url('../images/runner/training-runner.png');
-       height:570px;
-    margin:0 auto;
-    position:relative;
-    top:-4570px;
-    right:280px;
-    z-index:+5;
+    height: 570px;
+    margin: 0 auto;
+    position: relative;
+    top: -4570px;
+    right: 280px;
+    z-index: +5;
 }
+
 #training-title {
     position: relative;
     top: -650px;
@@ -922,14 +932,14 @@ footer {
     right: 0px;
 }
 
-#runner-health{
-    content:url("../images/runner/runner-health.png");
-       height:570px;
-    margin:0 auto;
-    position:relative;
-    top:-5110px;
-    right:280px;
-    z-index:+5;
+#runner-health {
+    content: url("../images/runner/runner-health.png");
+    height: 570px;
+    margin: 0 auto;
+    position: relative;
+    top: -5110px;
+    right: 280px;
+    z-index: +5;
 }
 
 .clickable-health {
@@ -1199,14 +1209,14 @@ footer {
 
 #runner-calender {
     content: url('../images/runner/runner-events.png');
-    height:590px;
-    margin:0 auto;
-    position:relative;
-    top:-2370px;
-    right:237px;
-    z-index:+5;
-   
+    height: 590px;
+    margin: 0 auto;
+    position: relative;
+    top: -2370px;
+    right: 237px;
+    z-index: +5;
 }
+
 #events {
     border-bottom: 3px solid;
     border-color: #E91E63
@@ -1502,4 +1512,180 @@ footer {
     text-align: right;
     font-size: 14pt;
     line-height: 30px;
+}
+
+
+/*site map */
+
+#siteMap {
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    line-height: 28px;
+}
+
+.sitemapBold {
+    line-height: 30px;
+    font-size: 25px;
+}
+
+#sitemap-footer ul li a {
+    color: black;
+}
+
+#sitemap-footer {
+    margin: 0 auto;
+    position: relative;
+    top: 180px;
+}
+
+/*site map END */
+
+/*about designg */
+#naor {
+    height: 300px;
+    border-radius: 200px;
+    margin: 0 auto;
+    position: relative;
+    margin: 30px;
+    top: 200px;
+}
+
+#ofri {
+    height: 300px;
+    border-radius: 200px;
+    margin: 0 auto;
+    position: relative;
+    margin: 30px;
+    top: 200px;
+}
+
+#danielle {
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    margin: 0 auto;
+    position: relative;
+    margin: 30px;
+    top: 200px;
+}
+
+#about-info {
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    text-align: right;
+    width: 940px;
+    right: 80px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+    #about-info h2 {
+        margin: 0 auto;
+        position: relative;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+#about-web-site {
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    text-align: right;
+    width: 960px;
+    right: 60px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+    #about-web-site h3 {
+        margin: 0 auto;
+        position: relative;
+        font-size: 25px;
+    }
+
+#hit-icon img {
+    height: 120px;
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+    right: 400px;
+    top: 100px;
+}
+
+#telem-link {
+    position: relative;
+    margin: 0 auto;
+    background-color: #018287;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    top: 130px;
+    right: 182px;
+}
+
+#developed {
+    margin: 0 auto;
+    text-align: right;
+    width: 300px;
+    position: relative;
+    right: -250px;
+    top: 300px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+    #developed h3 {
+        margin: 0 auto;
+        position: relative;
+        font-size: 25px;
+        right: -25px;
+    }
+
+#footer-about ul li a {
+    color: black;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    top: 250px;
+}
+
+#atribute {
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    width: 300px;
+    font-size: 17px;
+    text-align: right;
+    padding: 20px;
+}
+
+    #atribute h3 {
+        font-size: 30px;
+        ;
+    }
+/* END about designg */
+
+/*contect us design*/
+
+#conect {
+    font-size: 50px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+}
+
+#contectus-form {
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    width: 150px;
+    font-size: 17px;
+    text-align: right;
+}
+
+#footer-contect ul li {
+    position: relative;
+    top: 400px;
 }
