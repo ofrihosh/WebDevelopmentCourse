@@ -1,0 +1,1505 @@
+﻿
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+@font-face {
+    font-family: 'gveretlevine';
+    src: url('../styles/fonts/GveretLevinAlefAlefAlef-Regular.ttf');
+    src: url('../styles/fonts/GveretLevinAlefAlefAlef-Regular.eot') format('embedded-opentype'), url('../styles/fonts/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
+}
+
+/* general design */
+container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+body {
+    direction: rtl;
+    text-align: center;
+    font-family: rubik;
+    direction: rtl;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+    body a:hover {
+        border-bottom: 3px solid;
+        border-color: black;
+    }
+/*acssability */
+.accessibility {
+    position: absolute;
+    visibility: hidden;
+}
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    #skip li {
+        list-style-type: none;
+    }
+
+    #skip a {
+        position: absolute;
+        left: -99999px;
+        top: 30px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: -4px !important;
+            font: bold 50px "Arial", "Freesans", sans-serif !important;
+            color: #ffea35;
+            background: black url(transparent.png) repeat scroll 0 0;
+            border: 1px dotted #FFC107;
+        }
+
+/*acssability END*/
+
+#left {
+    position: fixed;
+    left: 40px;
+    top: 305px;
+    z-index: +8;
+}
+
+#right {
+    position: fixed;
+    top: 303px;
+    right: 20px;
+    z-index: +8;
+}
+
+#firstsec {
+    height: 730px;
+    background-color: #f9f9f9;
+    position: relative;
+    top: -290px;
+    z-index: +;
+}
+
+    #firstsec h3 {
+        position: relative;
+        top: 130px;
+        margin-bottom: 120px;
+        font-size: 60px;
+    }
+
+    #firstsec p {
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+        top: 30px;
+    }
+
+
+.button {
+    display: inline-grid;
+    position: relative;
+    right: 20px;
+    top: 10px;
+    height: 90px;
+    width: 90px;
+    z-index: +6p;
+}
+
+a.button {
+    text-decoration: none;
+    color: black;
+    background-color: #ffffffeb;
+    padding: 27px;
+    border-radius: 2000px;
+}
+
+
+.button img {
+    position: relative;
+    right: 8px;
+    top: -10px;
+}
+
+.texttype1 ul {
+    margin: 0 auto;
+    width: 400px;
+    text-align: right;
+    padding-right: 20px;
+    position: relative;
+    top: -270px;
+    right: 640px;
+}
+
+#secondbtn {
+    display: inline-grid;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    height: 90px;
+    width: 90px;
+}
+
+    #secondbtn:hover {
+        border: none;
+        background-color: white;
+    }
+
+#firstbtn:hover {
+    border: none;
+    background-color: white;
+}
+
+#thierdbtn:hover {
+    border: none;
+    background-color: white;
+}
+
+#thierdbtn {
+    display: inline-grid;
+    position: relative;
+    right: 75px;
+    top: 10px;
+    height: 90px;
+    width: 90px;
+}
+
+
+
+#secondsec {
+    position: relative;
+    top: -1310px;
+    height: 730px;
+    z-index: -6;
+    margin-top: 10px;
+}
+
+    #secondsec h3 {
+        font-size: 30px;
+        position: relative;
+        top: 120px;
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+
+
+
+    #secondsec a {
+        position: relative;
+        top: 250px;
+        display: inline-block;
+        padding-right: 40px;
+        padding-left: 40px;
+        text-decoration: none;
+        color: black;
+        z-index: +6;
+    }
+
+    #secondsec p {
+        position: relative;
+        top: 130px
+    }
+
+
+/*end general*/
+
+
+/*menu design*/
+
+#mainNav {
+    position: fixed;
+    height: 10px;
+    z-index: +6;
+}
+
+
+    #mainNav ul li {
+        display: inline-block;
+        position: relative;
+        top: 20px;
+        font-size: 17px;
+    }
+
+        #mainNav ul li a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+            padding-right: 25px;
+            padding-left: 25px;
+            right: -100px
+        }
+
+            #mainNav ul li a:hover {
+                border-bottom: 3px solid;
+                border-top: 3px solid;
+                border-color: #0000002b;
+            }
+
+    #mainNav #logo a {
+        position: relative;
+        top: -5px;
+        color: #0f0cb3;
+        font-size: 35px;
+        right: 99px;
+    }
+
+        #mainNav #logo a:hover {
+            position: relative;
+            color: #000000;
+            font-size: 35px;
+            border: none;
+        }
+
+    #mainNav #subtitle a {
+        font-family: gveretlevine;
+        font-size: 10px;
+        font-size: 15px;
+        position: relative;
+        top: 10px;
+        right: -100px;
+    }
+
+        #mainNav #subtitle a:hover {
+            font-family: gveretlevine;
+            font-size: 10px;
+            font-size: 15px;
+            border: none;
+        }
+
+#mainNav {
+    background-color: #ffffff;
+    height: 85px;
+    position: fixed;
+    width: 100%;
+    top: -5px;
+}
+
+.backgroundposition {
+    height: 779px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: 0px;
+}
+/* end */
+
+/*HOME PAGE DESIGN*/
+#runner-home {
+    content: url('../images/runner/runner-home.png');
+    height:600px;
+    margin:0 auto;
+    position:relative;
+    top:-840px;
+    right:250px;
+}
+
+
+#homebackground {
+    content: url("../images/background/background1.png");
+    height: 779px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: 0px;
+}
+
+#hometitle {
+    position: relative;
+    top: -620px;
+    right: -150px;
+    font-size: 60px;
+}
+
+#startbtn {
+    position: relative;
+    right: 20px;
+    font-weight: 600;
+    top: -580px;
+    background-color: #ffffffba;
+    box-shadow: black 2px 2px 8px;
+    padding: 8px;
+    border-radius: 9px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+    #startbtn:hover {
+        font-weight: 600;
+        background-color: #ffffff;
+        box-shadow: #0705b563 2px 2px 8px;
+    }
+
+
+
+footer {
+    position: relative;
+    top: -80px;
+    margin-bottom: 0px;
+    margin: 0;
+}
+
+#footerNav ul {
+    position: relative;
+    top: -140px;
+    right: 290px;
+    font-size:17px;
+
+}
+
+.footnavdesign ul li {
+    display: inline-block;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+    .footnavdesign ul li a {
+        text-decoration: none;
+        color: #fbfbfb;
+    }
+
+
+
+
+
+
+/*home page end*/
+
+/*get ready design*/
+
+#getready {
+    content: url("../images/background/Picture2.png");
+    height: 779px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: 0px;
+}
+
+#runner-getready {
+    content: url('../images/runner/runner-get-ready.png');
+    height:580px;
+    margin:0 auto;
+    position:relative;
+    top:-3885px;
+    right:280px;
+    z-index:+5;
+}
+
+#getready-page {
+    border-bottom: 3px solid;
+    border-color: #f3bd00;
+}
+
+#getreadytitle {
+    position: relative;
+    top: -650px;
+    font-size: 60px;
+    right: -200px;
+}
+
+#pagetitledescription {
+    position: relative;
+    top: -625px;
+    right: -100px;
+}
+
+#getreadyicons {
+    position: relative;
+    top: -490px;
+    right: -250px;
+    font-size: 17px;
+}
+
+.icon_position-getready {
+    position: relative;
+    left: -10px;
+}
+
+#checklist_icon {
+    content: url("../images/icons/icon-checklist.png");
+}
+
+#bigud-icon {
+    content: url("../images/acssesories/003-femenine.png")
+}
+
+
+#checklist1 {
+    position: relative;
+    top: -700px;
+}
+
+
+    #checklist1 ul li {
+        list-style-type: circle;
+        padding: 7px;
+        position: relative;
+        top: 250px;
+        right: -550px;
+    }
+
+    #checklist1 ul {
+        margin: 0 auto;
+    }
+
+#shoes-icon {
+    content: url("../images/acssesories/002-shoe.png");
+}
+
+#gadget-icon {
+    content: url("../images/acssesories/001-water-bottle.png");
+}
+
+
+
+
+#acsseories_icon {
+    content: url("../images/icons/icon-acsseories.png");
+}
+
+#programs_icon {
+    content: url("../images/icons/001-gym.png")
+}
+
+#types_icon {
+    content: url("../images/icons/005-shoe.png")
+}
+
+#pathes_icon {
+    content: url("../images/icons/004-way.png")
+}
+
+
+#checklistpic {
+    content: url(../images/checklist/checklist-mood-edited.png);
+    height: 700px;
+    position: relative;
+    top: -1100px;
+    left: 650px;
+    z-index: +1;
+    margin: 0 auto;
+}
+
+
+
+#acssesoriespic {
+    content: url("../images/acssesories/shoe-edited.png");
+    height: 450px;
+    position: relative;
+    top: -1738px;
+    right: 380px;
+    z-index: -1;
+    margin: 0 auto;
+}
+
+#footergatready ul {
+    position: relative;
+    top: -1693px;
+    left: 17px;
+    background-color: #f4f4f4;
+    padding-bottom: 10px;
+    padding-top: -10px
+}
+
+    #footergatready ul li a {
+        color: black;
+        position: relative;
+        left: 300px;
+        top: -10px;
+    }
+
+
+/*END get ready design*/
+
+
+
+/*mental design*/
+
+#mentalbackground {
+    content: url("../images/background/background3.png");
+    height: 779px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: 0px;
+}
+
+#runner-mental {
+    content: url('../images/runner/mental-runner.png');
+        height:530px;
+    margin:0 auto;
+    position:relative;
+    top:-2050px;
+    right:280px;
+    z-index:+5;
+}
+
+#mental-title {
+    position: relative;
+    top: -645px;
+    font-size: 60px;
+    right: -245px
+}
+
+#mental-description {
+    position: relative;
+    top: -620px;
+    right: -200px;
+}
+
+#mental {
+    border-bottom: 3px solid;
+    border-color: #9C27B0
+}
+
+
+#mental1 {
+    height: 730px;
+    background-color: #f9f9f9;
+    position: relative;
+    top: -295px;
+}
+
+
+#mental-buttons {
+    position: relative;
+    top: -490px;
+    right: -330px;
+}
+
+#mental1 h3 {
+    position: relative;
+    top: 120px;
+    margin-bottom: 120px;
+    font-size: 60px;
+}
+
+#mental1 p {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 30px;
+    top: 30px;
+    text-align: right;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    line-height: 32px;
+}
+
+#mental1 a {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+    #mental1 a:hover {
+        background-color: #ffffff;
+        color: black;
+    }
+
+#mentalpic {
+    content: url("../images/mental/calming rocks.png");
+    height: 450px;
+    position: relative;
+    top: -740px;
+    right: 480px;
+    margin: 0 auto;
+}
+
+
+
+#footer-mental ul {
+    position: relative;
+    top: -670px;
+    left: 17px;
+    right: -3px;
+    background-color: white;
+    height: 60px;
+    margin-bottom: -30px;
+    left: 650px;
+}
+
+    #footer-mental ul li a {
+        color: black;
+        position: relative;
+        left: 240px;
+        top: -10px;
+    }
+
+
+/*END mental design */
+
+/*training design*/
+#training-background {
+    content: url("../images/background/background5.jpg.png");
+    height: 779px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: 0px;
+}
+
+#training-runner {
+    content: url('../images/runner/training-runner.png');
+       height:570px;
+    margin:0 auto;
+    position:relative;
+    top:-4570px;
+    right:280px;
+    z-index:+5;
+}
+#training-title {
+    position: relative;
+    top: -650px;
+    font-size: 60px;
+    right: -290px;
+}
+
+#training-description {
+    position: relative;
+    top: -620px;
+    right: -150px
+}
+
+#buttons-training {
+    position: relative;
+    top: -490px;
+    right: -180px;
+    font-size: 16px;
+}
+
+
+#training {
+    border-bottom: 3px solid;
+    border-color: #4CAF50
+}
+
+#training-sec1 {
+    height: 750px;
+    background-color: #f9f8f6;
+    position: relative;
+    top: -295px;
+    right: -10px;
+    z-index: +1;
+}
+
+    #training-sec1 h3 {
+        position: relative;
+        top: 130px;
+        font-size: 60px;
+    }
+
+    #training-sec1 p {
+        position: relative;
+        top: 150px;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+
+
+#training1 {
+    position: relative;
+    border-right: solid;
+    padding-right: 20px;
+    border-color: #4CAF50;
+    right: -200px;
+    top: -700px;
+    margin: 0 auto;
+    z-index: +1;
+    text-align: right;
+    width: 400px;
+    height: 190px;
+}
+
+#training2 {
+    position: relative;
+    border-right: solid;
+    padding-right: 20px;
+    border-color: #4CAF50;
+    right: 250px;
+    top: -889px;
+    margin: 0 auto;
+    z-index: +3;
+    text-align: right;
+    width: 400px;
+    height: 190px;
+    margin-bottom: 10px;
+}
+
+    #training2 p {
+        margin-bottom: 35px;
+    }
+
+#training1 a {
+    position: relative;
+    top: 50px;
+}
+
+#training2 #trainingblink {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: #8080801a;
+    width: 150px;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    border-radius: 300px;
+}
+
+#trainingpic {
+    content: url("../images/training/progrems edited.png");
+    height: 600px;
+    position: relative;
+    top: -1090px;
+    right: 510px;
+    margin: 0 auto;
+    z-index: +1;
+}
+
+#training2 a {
+    position: relative;
+    top: 51px;
+}
+
+
+
+#training-sec2 {
+    position: relative;
+    top: -1245px;
+    height: 750px;
+    background-color: #ffffff;
+    z-index: -2;
+}
+
+    #training-sec2 h3 {
+        position: relative;
+        top: 130px;
+        font-size: 60px;
+    }
+
+    #training-sec2 p {
+        position: relative;
+        top: 150px;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+#progrems1 {
+    position: relative;
+    border-right: solid;
+    padding-right: 20px;
+    border-color: #4CAF50;
+    top: -1677px;
+    right: 240px;
+    width: 350px;
+    text-align: right;
+    margin: 0 auto;
+    z-index: +3;
+}
+
+#progrems2 {
+    position: relative;
+    right: -200px;
+    border-right: solid;
+    padding-right: 20px;
+    border-color: #4CAF50;
+    text-align: right;
+    top: -1855px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+#personaltrainerpic {
+    content: url("../images/training/personal trainer.png");
+    position: relative;
+    top: -570px;
+    left: 600px;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+#training-sec3 {
+    position: relative;
+    margin: 0 auto;
+    height: 760px;
+    background-color: #faf9f7;
+    top: -1565px;
+}
+
+    #training-sec3 a {
+        position: relative;
+        top: 270px;
+        display: inline-block;
+        padding: 40px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #training-sec3 h3 {
+        position: relative;
+        top: 130px;
+        font-size: 60px;
+    }
+
+    #training-sec3 p {
+        position: relative;
+        top: 160px;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+#buldings_trainings {
+    content: url("../images/icons/003-building.png");
+    margin-bottom: 5px;
+}
+
+#forest_trainings {
+    content: url("../images/icons/002-forest.png");
+    margin-bottom: 5px;
+}
+
+#beach_trainings {
+    content: url("../images/icons/001-beach.png");
+    margin-bottom: 5px;
+}
+
+
+#footer-training ul {
+    position: relative;
+    top: -1530px;
+    left: 17px;
+    background-color: #ffffff;
+    height: 60px;
+    margin-bottom: -30px;
+    margin: 0 auto;
+}
+
+    #footer-training ul li a {
+        color: black;
+        position: relative;
+        top: -10px;
+        right: -250px;
+    }
+
+/*END training design*/
+
+
+
+
+/* health design*/
+
+#health-background {
+    content: url("../images/background/background6.jpg.png");
+    height: 779px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: 0px;
+}
+
+#runner-health{
+    content:url("../images/runner/runner-health.png");
+       height:570px;
+    margin:0 auto;
+    position:relative;
+    top:-5110px;
+    right:280px;
+    z-index:+5;
+}
+
+.clickable-health {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: #8080801a;
+    width: 150px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    border-radius: 300px;
+}
+
+
+    .clickable-health:hover {
+        border: none;
+        background-color: #ffc200;
+        color: #080707;
+    }
+
+#health {
+    border-bottom: 3px solid;
+    border-color: #FFEB3B
+}
+
+#health-title {
+    position: relative;
+    top: -650px;
+    font-size: 60px;
+    right: -200px;
+}
+
+#health-description {
+    position: relative;
+    top: -625px;
+    right: -150px;
+}
+
+#health-buttons {
+    position: relative;
+    top: -490px;
+    right: -190px;
+}
+
+#health-sec1 {
+    height: 730px;
+    background-color: #f9f9f9;
+    position: relative;
+    top: -290px;
+    z-index: +;
+}
+
+    #health-sec1 h3 {
+        position: relative;
+        top: 130px;
+        margin-bottom: 120px;
+        font-size: 60px;
+    }
+
+    #health-sec1 p {
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+        top: 30px;
+    }
+
+#menu1 {
+    position: relative;
+    right: 190px;
+    border-right: solid;
+    padding-right: 20px;
+    border-color: #FFC107;
+    top: -710px;
+    margin: 0 auto;
+    text-align: right;
+    width: 400px;
+}
+
+#menu2 {
+    position: relative;
+    right: -260px;
+    top: -815px;
+    border-right: solid;
+    padding-right: 20px;
+    border-color: #FFC107;
+    margin: 0 auto;
+    text-align: right;
+    width: 400px;
+}
+
+
+#foodpic {
+    content: url("../images/health/berries edited.png");
+    height: 500px;
+    position: relative;
+    right: 439px;
+    top: -2600px;
+    margin: 0 auto;
+}
+
+#health-sec2 {
+    height: 730px;
+    background-color: #ffffff;
+    position: relative;
+    top: -410px;
+    z-index: +;
+}
+
+    #health-sec2 h3 {
+        position: relative;
+        top: 130px;
+        margin-bottom: 120px;
+        font-size: 60px;
+    }
+
+    #health-sec2 p {
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+        top: 30px;
+    }
+
+#question1 {
+    position: relative;
+    right: -100px;
+    margin: 0 auto;
+    top: -560px;
+    right: -580px;
+    line-height: 45px;
+}
+
+    #question1 ul li a {
+        background-color: #fafafa;
+        padding: 5px;
+        border-radius: 7px;
+        text-decoration: none;
+        color: black;
+    }
+
+        #question1 ul li a:hover {
+            background-color: #FFC107;
+            border-bottom: none;
+        }
+
+    #question1 ul {
+        width: 600px;
+    }
+
+#health-sec3 a {
+    position: relative;
+    top: 100px;
+    display: inline-block;
+    padding: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+#health-sec3 {
+    height: 730px;
+    background-color: #fafafa;
+    position: relative;
+    top: -820px;
+    z-index: +;
+}
+
+    #health-sec3 h3 {
+        position: relative;
+        top: 130px;
+        margin-bottom: 120px;
+        font-size: 60px;
+    }
+
+    #health-sec3 p {
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+        top: 30px;
+    }
+
+#footer-health ul {
+    position: relative;
+    top: -2050px;
+    left: 17px;
+    background-color: #ffffff;
+    height: 60px;
+    margin-bottom: -30px;
+    margin: 0 auto;
+}
+
+    #footer-health ul li a {
+        color: black;
+        position: relative;
+        top: -10px;
+        right: -250px;
+    }
+
+
+
+
+#health_menues {
+    content: url("../images/icons/003-meal.png");
+}
+
+#questions_health {
+    content: url("../images/icons/002-question.png");
+}
+
+#calc_health {
+    content: url("../images/icons/001-calculator.png");
+}
+
+
+.icon_positiontype2 {
+    margin-right: 12px;
+}
+
+#scale_health {
+    content: url("../images/icons/003-scale.png");
+}
+
+#fat_health {
+    content: url("../images/icons/002-fat.png");
+}
+
+#water_health {
+    content: url("../images/icons/001-water.png");
+}
+
+.cal_position {
+    margin: 10px;
+    margin-right: 20px;
+}
+
+
+#calculatorpic {
+    content: url("../images/health/apple edited.png");
+    position: relative;
+    top: -2200px;
+    right: -600px;
+    height: 800px;
+    z-index: +1;
+    margin: 0 auto;
+}
+
+/*END health design*/
+
+
+/*calender background*/
+
+#calender-background {
+    content: url("../images/background/background7.jpg.png");
+    height: 779px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: 0px;
+}
+
+#runner-calender {
+    content: url('../images/runner/runner-events.png');
+    height:590px;
+    margin:0 auto;
+    position:relative;
+    top:-2370px;
+    right:237px;
+    z-index:+5;
+   
+}
+#events {
+    border-bottom: 3px solid;
+    border-color: #E91E63
+}
+
+#calender-title {
+    position: relative;
+    top: -645px;
+    font-size: 60px;
+    right: -245px
+}
+
+#calender-description {
+    position: relative;
+    top: -620px;
+    right: -100px;
+}
+
+#calender-buttons {
+    position: relative;
+    top: -490px;
+    right: -260px;
+}
+
+#calender-sec1 {
+    height: 730px;
+    background-color: #f9f9f9;
+    position: relative;
+    top: -290px;
+    z-index: +;
+}
+
+    #calender-sec1 h3 {
+        position: relative;
+        top: 130px;
+        margin-bottom: 120px;
+        font-size: 60px;
+    }
+
+    #calender-sec1 p {
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+        top: 30px;
+    }
+
+#finish_icon {
+    content: url("../images/icons/002-finish.png");
+}
+
+#runner_icon {
+    content: url("../images/icons/001-running-man.png");
+}
+
+
+
+#race3, #race4 {
+    padding: 10px;
+    position: relative;
+    right: -690px;
+    top: -26px;
+}
+
+#race2, #race1 {
+    padding: 10px;
+    position: relative;
+    right: -630px;
+}
+
+    #race2 a, #race1 a, #race3 a, #race4 a {
+        color: #E91E63;
+        text-decoration: none;
+    }
+
+.event-design {
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#races2 {
+    position: relative;
+    top: 50px;
+}
+
+#calender-sec2 {
+    height: 730px;
+    background-color: #f9f9f9;
+    position: relative;
+    top: -290px;
+    z-index: +;
+}
+
+    #calender-sec2 h3 {
+        position: relative;
+        top: 130px;
+        margin-bottom: 120px;
+        font-size: 60px;
+    }
+
+    #calender-sec2 p {
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+        top: 30px;
+    }
+
+#marathon1, #marathon2 {
+    padding: 10px;
+    position: relative;
+    right: -630px;
+}
+
+    #marathon2 a, #marathon1 a, #marathon3 a, #marathon4 a {
+        color: #E91E63;
+        text-decoration: none;
+    }
+
+#marathon3, #marathon4 {
+    padding: 10px;
+    position: relative;
+    right: -690px;
+    top: -26px;
+}
+
+#marathons2 {
+    position: relative;
+    top: 50px;
+}
+
+#races1 {
+    position: relative;
+    right: 450px;
+    top: 70px;
+}
+
+
+#races2 {
+    position: relative;
+    right: 900px;
+    top: -195px;
+}
+
+#marathons1 {
+    position: relative;
+    right: 437px;
+    top: 60px;
+}
+
+#marathons2 {
+    position: relative;
+    right: 889px;
+    top: -205px;
+}
+
+
+#footer-calender ul {
+    background-color: #ffffff;
+    position: relative;
+    top: -206px;
+    margin: 0 auto;
+}
+
+    #footer-calender ul li a {
+        color: black;
+        position: relative;
+        left: 250px;
+        bottom: 10px;
+    }
+
+
+
+
+/*END calender page design*/
+
+
+/*pop ups*/
+#personal {
+    display: none;
+    Position: fixed;
+    top: 100px;
+    right: 340px;
+    text-align: center;
+    font-size: 26px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid;
+    border-color: #254325;
+    padding: 30px;
+    text-align: right;
+    font-size: 14pt;
+    line-height: 30px;
+    z-index: +5;
+}
+
+#personal {
+    display: none;
+}
+
+.popupdesign {
+    text-align: right;
+    font-size: 14pt;
+    line-height: 30px;
+    Position: fixed;
+    top: 100px;
+    right: 340px;
+    text-align: center;
+    font-size: 20px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid;
+    border-color: #254325;
+    padding: 30px;
+}
+
+
+
+    .popupdesign p {
+        margin: 25px;
+        font-size: 15px;
+    }
+
+    .popupdesign h1 {
+        font-size: 40px;
+        padding-right: 40px;
+        position: relative;
+        top: 20px;
+    }
+
+.clickable {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: #8080801a;
+    width: 150px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    border-radius: 300px;
+}
+
+
+    .clickable:hover {
+        border: none;
+        background-color: green;
+        color: white;
+    }
+
+
+.close {
+    text-decoration: none;
+    display: block;
+    background-color: #000000;
+    width: 60px;
+    position: relative;
+    top: -70px;
+    right: -450px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    border-radius: 300px;
+}
+
+    .close:hover {
+        background-color: red;
+        border: none;
+        color: black;
+    }
+
+#groups {
+    display: none;
+    Position: fixed;
+    top: 100px;
+    right: 340px;
+    text-align: center;
+    font-size: 26px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid;
+    border-color: #254325;
+    padding: 30px;
+    text-align: right;
+    font-size: 14pt;
+    line-height: 30px;
+}
