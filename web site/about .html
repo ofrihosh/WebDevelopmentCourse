@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html lang="">
+<head class"header>
+    <meta charset="utf-8" />
+    <title>מרתוניסט - אודות</title>
+    <meta name="description" content="עמוד אודות של אתר מרתוניסט - המדריך לריצת המרתון הראשונה שלך" />
+    <meta name="keywords" content="מרתון ראשון, ריצה, תחרות, מרתון, נאור דניאל, עופרי הושמנד, דניאל הררי" />
+    <meta name="author" content="naor daniel, ofri hoshmand and daniele harrary" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/siteIcon.png">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/animate.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!--<script src="js/modernizr.custom.js"></script>-->
+
+</head>
+<body>
+    <div id="container">
+        <nav id="mainNav">
+            <ul>
+                <!--הלוגו יעוצב ב סיאסס כדי שיהיה נגיש -->
+                <li id="logo"><h1><b> <a href="homepage.html">הדרך למרתון</a> </b>  </h1></li>
+                <li><a href="#">הכנות ראשונות</a></li>
+                <li><a href="#">הכנה מנטלית</a></li>
+                <li><a href="#">אימונים</a></li>
+                <li><a href="#">בריאות ותזונה</a></li>
+                <li><a href="#">לוח אירועים</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section>
+                <h1>אודות</h1>
+                    <h2>
+                        פותח על ידי:נאור דניאל, עופרי הושמנד ודניאל הררי
+                    </h2>
+                    <div>
+                        <img src="images/naor.jpg" />
+                        <img src="images/ofri.jpg" />
+                        <img src="images/danielle.jpg" />
+                    </div>
+
+                    <h2> במסגרת פרוייקט משולב לקורסים בשנה א', תשע"ח:</h2>
+
+                    <ul>
+                        <li>אפיון ממשק וחווית משתמש</li>
+                        <li>עיצוב ממשק משתמש</li>
+                        <li>פיתוח אתרי אינטרנט</li>
+                        <li>הנגשת אתרי אינטרנט</li>
+                    </ul>
+                
+
+                <p>
+                    האתר אופיין ועוצב לפי עקרונות של "עיצוב ממשק" ופותח ב- HTML5 ו-CSS3 תוך התחשבות בעקרונות "נגישות אתרים".
+                </p>
+
+                <p>
+                    האתר כולל <a href="#">תוצר אינטראקטיבי לייצוג ידע</a> המאופיין ומפותח בקורסים" ארגון וייצוג ידע" ו- "מבוא לתכנות אינטראקטיבי".
+
+                </p>
+
+            </section>
+
+            <section>
+                <h1>על האתר</h1>
+                <p>
+                    האתר "הדרך למרתון" נועד לתת מענה לאנשים שרוצים לרוץ את המרתון הראשון בחייהים
+                    .האתר מקיף את כל התחומים שנוגעים במרתון מההכנות הראשונות ועד לאימונים ואיביזרים
+
+                </p>
+
+                <p>
+                    קונספט האתר בנוי ממסלול עיקרי  בו עוברים הגולשים באתר (התפריט העליון), ומסלולים משניים בכל קטגוריה בתפריט (הגלילה לאורך.
+                    בכל עמוד באתר מד הקילומטרים משתנה בהתאם לתחנה בה אתה נמצא בדרך לסיום המרתון מתוך 42.2 קילומטרים.
+                </p>
+
+            </section>
+
+            <section>
+                <h1>להלן המסכים שפותחו באתר:</h1>
+                <p>
+                    <ul>
+                        <li><a href="homepage.html">עמוד הבית</a></li>
+                        <li>אודות</li>
+                        <li><a href="sitemap .html">מפת אתר</a></li>
+                        <li><a href="contactus.html">צור קשר</a></li>
+                        <li><a href="#">סוגי אימונים</a></li>
+                        <li><a href="#">אימון אישי</a></li>
+                        <li><a href="#">אימון קבוצתי</a></li>
+
+
+
+
+
+                    </ul>
+                </p>
+            </section>
+
+            <section>
+                <a href="http://www.hit.ac.il/"> <img src="images/לוגו אופצייה ג (PNG).png" /> </a>
+                <a href="http://www.hit.ac.il/telem/overview/">הפקולטה לטכנולוגיות למידה</a>
+            </section>
+
+
+            <script>
+                // Select all links with hashes
+                $('a[href*="#"]')
+                    // Remove links that don't actually link to anything
+                    .not('[href="#"]')
+                    .not('[href="#0"]')
+                    .click(function (event) {
+                        // On-page links
+                        if (
+                            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                            &&
+                            location.hostname == this.hostname
+                        ) {
+                            // Figure out element to scroll to
+                            var target = $(this.hash);
+                            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                            // Does a scroll target exist?
+                            if (target.length) {
+                                // Only prevent default if animation is actually gonna happen
+                                event.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: target.offset().top
+                                }, 1000, function () {
+                                    // Callback after animation
+                                    // Must change focus!
+                                    var $target = $(target);
+                                    $target.focus();
+                                    if ($target.is(":focus")) { // Checking if the target was focused
+                                        return false;
+                                    } else {
+                                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                        $target.focus(); // Set focus again
+                                    };
+                                });
+                            }
+                        }
+                    });
+            </script>
+
+
+        </article>
+        <footer>
+            <nav id="footerNav">
+                <ul>
+                    <li><a href="about .html">אודות</a></li>
+                    <li><a href="contactus.html">צור קשר</a></li>
+                    <li><a href="sitemap .html">מפת אתר</a></li>
+
+                </ul>
+            </nav>
+
+        </footer>
+    </div>
+</body>
+
+
+</html>
+
