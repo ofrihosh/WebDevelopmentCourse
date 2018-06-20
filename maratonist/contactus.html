@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html lang="" class="animated slideInLeft">
+<head>
+    <meta charset="utf-8" />
+    <title>מרתוניסט - צור קשר</title>
+    <meta name="description" content="עמוד מפת אתר של אתר מרתוניסט - המדריך לריצת המרתון הראשונה שלך" />
+    <meta name="keywords" content="מרתון ראשון, ריצה, תחרות, מרתון, צור קשר" />
+    <meta name="author" content="naor daniel, ofri hoshmand and daniele harary" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/siteIcon.png">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/animate.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <header>
+        <nav id="mainNav">
+            <ul>
+                <!--הלוגו יעוצב ב סיאסס כדי שיהיה נגיש -->
+                <li id="logo"><h1><b> <a href="homepage.html">הדרך למרתון</a> </b>  </h1></li>
+                <li><a href="#">הכנות ראשונות</a></li>
+                <li><a href="#">הכנה מנטלית</a></li>
+                <li><a href="#">אימונים</a></li>
+                <li><a href="#">בריאות ותזונה</a></li>
+                <li><a href="#">לוח אירועים</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="container">
+        <section id="siteMap">
+            <h1>מפת אתר </h1>
+            <nav>
+                <ul>
+                    <div>
+                        <li> <B> <a href="#">אימונים</a>  </B> </li>
+                        <li><a href="#">סוגי אימונים</a></li>
+                        <li><a class="notActive" href="#">מסלולים מומלצים</a></li>
+                        <li><a href="#"> הכנה מנטלית</a></li>
+                        <li><a href="#"> תכניות אימונים</a></li>
+                    </div>
+
+                    <div>
+                        <li> <B> <a href="#">בריאות ותזונה</a>  </B> </li>
+                        <li><a class="notActive" href="#">תפריטים והמלצות</a></li>
+                        <li><a class="notActive" href="#">מחשבוני תזונה</a></li>
+                        <li><a class="notActive" href="#"> פציעות נפוצות – שאלות תשובות</a></li>
+                    </div>
+                    <div>
+                        <li> <B> <a href="#">ביגוד ואביזרים</a>  </B> </li>
+                        <li><a class="notActive" href="#">גברים</a></li>
+                        <li><a class="notActive" href="#"> נשים</a></li>
+                        <li><a class="notActive" href="#">אביזרים וגאדג'טים</a></li>
+                    </div>
+
+                    <div>
+                        <li> <B> <a href="#">לוח אירועים</a>  </B> </li>
+                    </div>
+
+                </ul>
+            </nav>
+        </section>
+
+    </div>
+    <!--<script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>-->
+    <footer>
+        <nav id="footerNav">
+            <ul>
+                <li><a href="about .html">אודות</a></li>
+                <li><a href="contactus.html">צור קשר</a></li>
+                <li><a href="sitemap .html">מפת אתר</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+
+
+</html>
